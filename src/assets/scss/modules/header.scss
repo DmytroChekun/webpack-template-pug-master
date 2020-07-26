@@ -1,0 +1,200 @@
+// header style
+.header {
+    width: 100%;
+    display: flex;
+    font-size: 18px;
+    height: 80px;
+    font-weight: 600;
+    background: $bg-dark-1;
+    color: $fc-light-2;
+    font-family: $mainFont;
+    border-bottom: 1px solid #3B5063;
+    position: fixed;
+    justify-content: space-between;
+    z-index: 2;
+    // .header__logo-box
+
+    &__logo-box {
+        width: 256px;
+        min-width: 256px;
+        display: flex;
+        @include flex-center;
+        border-right: 1px solid #3B5063;
+    }
+
+    // .header__product-name
+
+    &__product-name {
+        padding-left: 4px;
+        color: $fc-light-1;
+    }
+
+    // .header__social-box
+
+    &__social-box {
+        padding-left: 32px;
+        display: flex;
+        align-items: center;
+        min-width: 216px;
+        width: 100%;
+    }
+
+    // .header__social-item
+
+    &__social-item {
+        margin-right: 24px;
+    }
+
+    // .header__social-ico
+
+    &__social-ico {
+    }
+
+    // .header__ui-box
+
+    &__ui-box {
+        display: flex;
+        width: auto;
+    }
+
+    // .header__currency-wrap
+
+    &__currency-wrap {
+        display: flex;
+        @include flex-center;
+        border-right: 1px solid #3B5063;
+        & img{
+            padding: 0 8px 3px 0;
+        }
+    }
+
+    // .header__coin-box
+
+    &__coin-box {
+        height: 100%;
+        width: 105px;
+        min-width: 105px;
+        display: flex;
+        @include flex-center;
+        border-left: 1px solid #3B5063;
+        border-right: 1px solid #3B5063;
+    }
+
+    // .header__coins-value
+
+    &__coins-value {
+        
+    }
+
+    // .header__money-value
+
+    &__money-value {
+    
+    }
+
+    // .header__money-box
+
+    &__money-box {
+        width: 248px;
+        min-width: 248px;
+        display: flex;
+        @include flex-center;
+    }
+    // .header__money-wrap
+
+    &__money-wrap{
+        margin-right: 16px;
+    }
+
+    // .header__refill-btn
+
+    &__refill-btn {
+        background: $bg-grey-2;
+        border-radius: 8px;
+        color: $fc-light-2;
+        width: 118px;
+        min-width: 118px;
+        height: 46px;
+        font-family: $mainFont;
+        font-weight: 600;
+        font-size: 18px;
+    }
+
+    // .header__fav-wrap
+
+    &__fav-wrap {
+        display: flex;
+        width: 160px;
+        min-width: 160px;
+        @include flex-center;
+        border-right: 1px solid #3B5063;
+    }
+
+    // .header__add-box
+
+    &__add-box {
+    }
+    &__add-box, &__notification-box {
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        border: 1px solid #3B5063;
+        display: flex;
+        @include flex-center;
+        margin: 0 8px;
+    }
+    // .header__notification-box
+
+    &__notification-box {
+        position: relative;
+    }
+
+    // .header__notification-counter
+
+    &__notification-counter {
+        position: absolute;
+        right: -5px;
+        top: -5px;
+        width: 20px;
+        height: 20px;
+        background: #E9ECF2;
+        color: $bg-dark-1;
+        font-size: 11px;
+        border-radius: 50%;
+        display: flex;
+        @include flex-center;
+    }
+
+    // .header__profile-box
+
+    &__profile-box {
+        width: 245px;
+        min-width: 245px;
+        padding: 0 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    // .header__profile-pic-wrap
+
+    &__profile-pic-wrap {
+        width: 56px;
+        height: 56px;
+        border-radius: 16px;
+        overflow: hidden;
+        background: $bg-grey-3;
+    }
+
+    // .header__profile-pic
+
+    &__profile-pic {
+        width: 100%;
+        height: auto;
+    }
+
+    // .header__user-name
+
+    &__user-name {
+    }
+}
